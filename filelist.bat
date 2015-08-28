@@ -1,6 +1,8 @@
 @echo off
 echo filelist - List files in the directory
-set /p d="Directory: "
+echo Current Directory: %cd%
+set d=.
+set /p d="Directory(default=current directory): "
 cd /d %d%
 set file=out.txt
 dir /b/s>%file%
