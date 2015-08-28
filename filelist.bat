@@ -1,5 +1,6 @@
 @echo off
 echo filelist - List files in the directory
+:start
 echo Current Directory: %cd%
 set d=.
 set /p d="Directory(default=current directory): "
@@ -8,4 +9,5 @@ set file=out.txt
 dir /b/s>%file%
 echo %file% written at %date% %time%.
 start %file%
-pause
+echo.
+goto start
