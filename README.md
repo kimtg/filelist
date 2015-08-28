@@ -1,2 +1,2 @@
 # filelist
-Lists files in the directory
+List files in the directory
